@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+
+}
+:root{
+    --general-width: 650px;
+    --color-for-buttons: #8400ff;
+    --font_for_buttons: 'Lobster', cursive;
+    --border_radius:15px;
+    --color_for_titles: rgb(255, 255, 255); 
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: var(--general-width);
+    background-image: url("../images/fibonacchi_back.jpeg");
+    background-size: cover;
+    background-position: center;
+
+}
+.photo{
+    margin-top: 200px;
+    height: 350px;
+    width: var(--general-width);
+    border-radius: 10px;
+ 
+}
+.upsite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.name{
+    display: flex;
+    align-self: center;
+    z-index: 1;
+    margin-top: -80px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: var(--color_for_titles);
+}
+.special{
+    display: flex;
+    align-self: center;
+    z-index: 1;
+    margin-top: -7px;
+    color: var(--color_for_titles);
+    font-style: italic;
+
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius:var(--border_radius);
+
+
+    
+
+}
+.shots, .followers, .projects{
+    display: flex;
+    background-color: var(--color-for-buttons);
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    font-family:var(--font_for_buttons);
+    
+    
+
+}
+.shots > p, .followers > p, .projects > p{
+    margin-top: 20px;
+}
+.projects{
+    border-bottom-right-radius:var(--border_radius);
+}
+.shots{
+    border-bottom-left-radius:var(--border_radius);
+}
+.botsite{
+
+    display: flex;
+    align-self: center;
+    background-color: brown;
+    height: 100px;
+    width: 180px;
+    border-bottom-left-radius:var(--border_radius);
+    border-bottom-right-radius:var(--border_radius);
+
+}
+.button{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-left: 70px;
+    font-family:var(--font_for_buttons);
+}
